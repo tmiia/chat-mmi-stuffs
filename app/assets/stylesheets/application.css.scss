@@ -1,0 +1,71 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+ @import "font-awesome";
+*{
+   margin: 0;
+   padding: 0;
+ }
+body{
+  background-color: #000;
+  color: #FFF;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+}
+a{
+  text-decoration: none;
+}
+footer{
+  position: sticky;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  align-content: center;
+  justify-content: end;
+  padding: 1em 0;
+  background-color: #000;
+}
+.header{
+  position: sticky;
+  top: 0;
+  left: 0;
+  padding: 0.5em 0;
+  background-color: #000;
+  margin-bottom: 3em;
+  .header-logo{
+    width: 10em;
+  }
+}
+
+.center{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-primary{
+  padding: 0.5em 2em;
+  background-color: #FFF;
+  border-radius: 5px;
+  text-transform: uppercase;
+  font-weight: 600;
+  transition: background-color .3s ease-in-out;
+  &:hover{
+    border: 1px solid #FFF;
+    background-color: transparent;
+  }
+}

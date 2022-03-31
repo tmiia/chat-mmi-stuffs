@@ -1,0 +1,32 @@
+<div class="msg-container">
+<p id="notice"><%= notice %></p>
+
+<h1>Messages</h1>
+<table>
+
+  <tbody>
+    <% @messages.each do |message| %>
+      <tr>
+        <td class="msg"><%= message.text %><br> <span class="date"><%= message.created_at %></span></td>
+        <td class="msg-actions">
+          <%= link_to edit_message_path(message), id:"edit" do %>
+            <%= fa_icon "pencil"%>
+          <% end %>
+        </td>
+        <td class="msg-actions">
+          <%= link_to message, method: :delete, data: { confirm: 'Are you sure?' }, id:"destroy" do %>
+            <%= fa_icon "trash"%>
+          <% end %>
+        </td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+</div>
+
+<br>
+<br>
+<br>
+<footer>
+  <%= link_to 'New Message', new_message_path, class: "btn-primary footer-btn" %>
+</footer>
