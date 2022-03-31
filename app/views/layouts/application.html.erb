@@ -14,7 +14,10 @@
 
   <body>
     <header class="header">
-      <%= image_tag("Logo.svg", :alt => "Logo", :class => "header-logo") %>
+      <%= link_to root_path do %>
+        <%= image_tag("Logo.svg", :alt => "Logo", :class => "header-logo") %>
+      <% end %>
+
     </header>
     <%= yield %>
   </body>

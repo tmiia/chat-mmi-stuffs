@@ -33,7 +33,7 @@ footer{
   left: 0;
   display: flex;
   align-content: center;
-  justify-content: end;
+  // justify-content: end;
   padding: 1em 0;
   background-color: #000;
 }
@@ -58,14 +58,14 @@ footer{
 }
 
 .btn-primary{
-  padding: 0.5em 2em;
+  padding: 1em 2em;
   background-color: #FFF;
+  border: 1px solid #FFF;
   border-radius: 5px;
   text-transform: uppercase;
   font-weight: 600;
   transition: background-color .3s ease-in-out;
   &:hover{
-    border: 1px solid #FFF;
     background-color: transparent;
   }
 }

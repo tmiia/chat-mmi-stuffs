@@ -44,3 +44,21 @@
     }
   }
 }
+
+footer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  form{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    .msg-input{
+      width: 70%;
+      min-height: 3em;
+      border-radius: 5px;
+      padding: 0 1em;
+    }
+  }
+}
